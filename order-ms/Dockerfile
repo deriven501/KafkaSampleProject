@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=build /app/target/order-ms-0.0.1-SNAPSHOT.jar  /app/order-ms-0.0.1-SNAPSHOT.jar
 
 # Expose the application port
-EXPOSE 8081
+EXPOSE 8084
 
 # Run the application
 CMD ["java", "-jar", "order-ms-0.0.1-SNAPSHOT.jar"]
